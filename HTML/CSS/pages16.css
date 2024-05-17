@@ -4,10 +4,16 @@
 }
 body{
     background-color: #D9D9D9;
+    width: 100%;
 }
 
-.linha-horizontalCima {
+.Linha-horizontalCima {
     border: 1px solid #a2a2a2;
+}
+
+.Linha-horizontalBaixo {
+  border: 1px solid #a2a2a2;
+  padding: 10px;
 }
 
 img{
@@ -22,93 +28,57 @@ nav{
     height: 80px;   
 }
 
-.icon-menu {
-    margin-left: 1475px;
-    margin-top: -50px;
-}
-
-.icon-menu {
-    --gap: 5px;
-    --height-bar: 2.5px;
-    --pos-y-bar-one: 0;
-    --pos-y-bar-three: 0;
-    --scale-bar: 1;
-    --rotate-bar-one: 0;
-    --rotate-bar-three: 0;
-    width: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap);
-    cursor: pointer;
-    position: relative;
-  }
-  
-  .bar {
-    position: relative;
-    height: var(--height-bar);
-    width: 100%;
-    border-radius: .5rem;
-    background-color: #db3934;
-  }
-  
-  .bar--1 {
-    top: var(--pos-y-bar-one);
-    transform: rotate(var(--rotate-bar-one));
-    transition: top 200ms 100ms, transform 100ms;
-  }
-  
-  .bar--2 {
-    transform: scaleX(var(--scale-bar));
-    transition: transform 150ms 100ms;
-  }
-  
-  .bar--3 {
-    bottom: var(--pos-y-bar-three);
-    transform: rotate(var(--rotate-bar-three));
-    transition: bottom 200ms 100ms, transform 100ms;
-  }
-  
-  .check-icon:checked + .icon-menu > .bar--1 {
-    transition: top 200ms, transform 200ms 100ms;
-  }
-  
-  .check-icon:checked + .icon-menu > .bar--3 {
-    transition: bottom 200ms, transform 200ms 100ms;
-  }
-  
-  .check-icon:checked + .icon-menu {
-    --pos-y-bar-one: calc(var(--gap) + var(--height-bar));
-    --pos-y-bar-three: calc(var(--gap) + var(--height-bar));
-    --scale-bar: 0;
-    --rotate-bar-one: 45deg;
-    --rotate-bar-three: -45deg;
-  }
-
-
 .Pedidos {
     font-size: 36px; 
     font-weight: bold;
-    margin-top: 45px;
-    margin-left: 330px;
-    position: relative;
+    padding: 10px;
+    display: block;
+    flex-direction: row;
 }
 
-.Caixa1, .Caixa2, .Caixa3, .Caixa4, .Caixa5, .Caixa6, .Caixa7, .Caixa8, .Caixa9, .Caixa10 {
+.Caixa1 {
     width: 650px;  
     height: 50px; 
     background-color: #ffffff;
-    margin-left: 320px;
-    margin-top: 21px;
+    padding: 10px;
     border: #ffffff;
+    flex-direction: column;
+
 }
 
-.Button1, .Button2, .Button3, .Button4, .Button5, .Button6, .Button7, .Button8, .Button9, .Button10 {
+.Button1 {
     width: 170px;
     height: 50px;
     color: #000000;
-    margin-left: 695px;
+    padding-left: 10px;
     background-color: #a2a2a2;
     border: #a2a2a2;
     cursor: pointer;
-    /*margin-top: 10px;*/
+}
+
+.Voltar{
+  height: 70vh;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+  align-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 3px 2px 1px 1px rgb(183, 183, 183); 
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  width: 400px;
+  height: 65px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
